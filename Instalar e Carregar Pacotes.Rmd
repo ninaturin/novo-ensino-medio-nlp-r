@@ -1,0 +1,28 @@
+---
+title: "Função para Instalar e Carregar Pacotes"
+output:
+  html_document:
+    df_print: paged
+---
+
+**Instalar e Carregar Pacotes**
+
+```{r Instalar Pacotes, echo=TRUE}
+
+pacotes <- pacotes <- c("tidytext","ggplot2","dplyr","tibble","wordcloud",
+             "stringr","SnowballC","widyr","lexiconPT",
+             "tidyr","readxl","tm","e1071","gmodels","caret","reshape2","textdata",
+             "tuber", "pander", "syuzhet", "fpc", "cluster", "tidyverse",
+             "ggplot2", "dplyr", "knitr")
+
+if(sum(as.numeric(!pacotes %in% installed.packages())) != 0){
+  instalador <- pacotes[!pacotes %in% installed.packages()]
+  for(i in 1:length(instalador)) {
+    install.packages(instalador, dependencies = T)
+    break()}
+  sapply(pacotes, require, character = T) 
+} else {
+  sapply(pacotes, require, character = T) 
+}
+```
+
