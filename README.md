@@ -35,17 +35,6 @@ O projeto foi desenvolvido em R e contemplou as seguintes etapas:
 - TF-IDF (Term Frequency – Inverse Document Frequency)
 - Visualização de Dados
 
-## Ferramentas
-
-- R
-- RStudio
-- tidyverse
-- tidytext
-- tm
-- wordcloud
-- ggplot2
-- tibble
-
 ## Principais Resultados
 
 ### Temas mais frequentes
@@ -80,7 +69,58 @@ A técnica TF-IDF permitiu identificar palavras características dos canais anal
 ## Conclusão
 
 Os resultados demonstram que técnicas de Processamento de Linguagem Natural podem apoiar a análise e avaliação de políticas públicas ao permitir o monitoramento de debates em ambientes digitais. Entretanto, é fundamental considerar limitações metodológicas, ambiguidades linguísticas, vieses dos dados e características específicas das plataformas analisadas.
+## Ferramentas e Bibliotecas
 
+### Linguagem e Ambiente
+
+- R
+- RStudio
+
+### Coleta de Dados
+
+- YouTube Data API v3
+- tuber
+
+### Manipulação e Tratamento de Dados
+
+- tidyverse
+- dplyr
+- tidyr
+- tibble
+- stringr
+- readxl
+
+### Processamento de Linguagem Natural (PLN)
+
+- tidytext
+- tm
+- SnowballC
+- lexiconPT
+- syuzhet
+- widyr
+
+### Análise de Sentimentos
+
+- NRC Emotion Lexicon
+- SentiLex-PT
+
+### Machine Learning
+
+- e1071 (Naive Bayes)
+- caret
+- fpc
+- cluster
+
+### Visualização de Dados
+
+- ggplot2
+- wordcloud
+- viridis
+
+### Documentação e Relatórios
+
+- knitr
+- pander
 ## Autora
 
 **Nina Maria Turin do Paço**
